@@ -1,18 +1,30 @@
-# Guardar el texto en un archivo llamado "texto_preg1.txt"
-with open("texto_preg1.txt", "w") as archivo:
-    archivo.write(texto_preg1)
+#-----------------------------------PROBLEMA_1-------------------------------------------------------
 
-# Paso 2: Leer el archivo y contar las ocurrencias de la palabra "la"
-with open("texto_preg1.txt", "r") as archivo:
-    contenido = archivo.read()
-    contador_la = contenido.lower().count("la")
+# Paso 1: Guardar el texto en un archivo
+texto_del_problema1 = """En el ámbito del desarrollo de software, la colaboración es fundamental. La 
+colaboración eficiente impulsa la eficacia y mejora la calidad del código. La calidad del 
+código, a su vez, es esencial para la mantenibilidad del sistema. Mantener un sistema 
+sin problemas es esencial para la satisfacción del cliente. La satisfacción del cliente, por 
+supuesto, es un objetivo clave para cualquier equipo de desarrollo. Desarrollar 
+estrategias para fomentar la colaboración continua y mejorar la calidad del código es 
+una práctica que beneficia a todos los miembros del equipo y contribuye al éxito 
+general del proyecto"""
 
-print(f'La palabra "la" aparece {contador_la} veces en el archivo.')
+# sirve apra guardar el texto en un archivo
+with open('texto.txt', 'w') as texto:
+    texto.write(texto_del_problema1)
 
-# Paso 3: Agregar texto ingresado por el usuario al final del archivo
-texto_usuario = input("Ingrese un texto para agregar al final del archivo: ")
+# Lee el archivo y contar las ocurrencias de la palabra "la"
+with open('texto.txt', 'r') as texto:
+    contenido = texto.read()
+    contar_la_palabra_la = contenido.lower().count("la")
 
-with open("texto_preg1.txt", "a") as archivo:
-    archivo.write("\n" + texto_usuario)
+print(f'La palabra "la" aparece {contar_la_palabra_la} veces en el archivo texto_del_problema1.')
 
-print("Texto agregado exitosamente al final del archivo.")
+# se ingresar un nuevo texto para agregarlo al final del trexto
+texto_ingresado = input("Ingrese un texto para agregar al final del texto: ")
+
+with open('texto.txt', 'a') as texto:
+    texto.write('\n' + texto_ingresado)
+
+print('Texto ingresado agregado al final del archivo texto.')
