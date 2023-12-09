@@ -1,2 +1,0 @@
-user|password|fullname|rol
-user1|userPassword|carlos perez|admin
