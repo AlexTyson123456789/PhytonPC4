@@ -6,4 +6,4 @@ supuesto, es un objetivo clave para cualquier equipo de desarrollo. Desarrollar
 estrategias para fomentar la colaboración continua y mejorar la calidad del código es 
 una práctica que beneficia a todos los miembros del equipo y contribuye al éxito 
 general del proyecto
-ARRIBA PERU PARA SIEMPRE
+/home/codespace/.python/current/bin/python3 /workspaces/PhytonPC4/problema2.py
